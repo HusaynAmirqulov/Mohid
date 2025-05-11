@@ -1,4 +1,6 @@
 const loading = document.getElementById("loading");
+let modeToggle = document.querySelector(".switch");
+let body = document.querySelector("body");
 
 $(document).ready(function () {
   $(".testimonial-carousel").owlCarousel({
@@ -23,6 +25,10 @@ $(document).ready(function () {
   });
 });
 
+modeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark");
+});
+
 window.addEventListener("scroll", function () {
   toggleBacktop();
 });
@@ -41,3 +47,12 @@ function toggleBacktop() {
 }
 
 setTimeout(() => (loading.style.display = "none"), 3000);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector("#hamburger");
+  const navMenu = document.querySelector(".nav-menus");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+});
