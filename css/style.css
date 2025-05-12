@@ -567,7 +567,7 @@ body.dark .switch::before {
   max-width: 456px;
 }
 
-.discover-desc{
+.discover-desc {
   padding: 80px 0 0;
 }
 
@@ -1033,7 +1033,7 @@ testimonial-section {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 735px) {
   .nav {
     flex-direction: column;
   }
